@@ -21,6 +21,6 @@ public class Main {
     //Cr�ation de notre fen�tre avec le contr�leur en param�tre
     //Calculette calculette = new Calculette(controler);
     //Ajout de la fen�tre comme observer de notre mod�le
-    model.AddFrigo();
+    model.AddFrigo(null);
   }
 }

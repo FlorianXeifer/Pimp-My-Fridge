@@ -16,14 +16,20 @@ public abstract class Model implements Observable {
 		
 	}
 
-	public void AddFrigo() {
+	public void AddFrigo(Observer obs) {
+		this.frigo.add(obs);
 		// TODO - implement Model.AddFrigo
 		
 	}
+	
+	public void notifyObserver(String str) {
+	    for(Observer obs : frigo)
+	      obs.update(str);
+	  }
 
 	public void RemoveFrigo() {
 		// TODO - implement Model.RemoveFrigo
-		
+		frigo = new ArrayList<Observer>();
 	}
 
 
