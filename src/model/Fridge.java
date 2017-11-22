@@ -2,9 +2,10 @@ package model;
 
 import java.util.ArrayList;
 
+import javafx.beans.InvalidationListener;
 import javafx.util.Callback;
 
-public class Fridge {
+public class Fridge extends Model{
 
 	private int temperature;
 	private float hygrometrie;
@@ -64,7 +65,7 @@ public class Fridge {
 
 	public void getAttribute() {
 		// TODO - implement Frigo.getAttribute
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
@@ -73,7 +74,7 @@ public class Fridge {
 	 */
 	public void setAttribute(int attribute) {
 		// TODO - implement Frigo.setAttribute
-		throw new UnsupportedOperationException();
+		
 	}
 
 	public int getConsigne() {
@@ -101,13 +102,14 @@ public class Fridge {
 	}
 
 	public result readResult() {
+		return null;
 		// TODO - implement Frigo.readResult
-		throw new UnsupportedOperationException();
+		
 	}
 
 	public void testResult() {
 		// TODO - implement Frigo.testResult
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
@@ -121,4 +123,20 @@ public class Fridge {
 	public ArrayList getContenu() {
 		return this.contenu;
 	}
+
+	@Override
+	public void addListener(InvalidationListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeListener(InvalidationListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+	
 }
